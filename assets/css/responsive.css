@@ -1,0 +1,219 @@
+/*==================================================
+            Mobile Menu         
+==================================================*/
+.mbl-menu-open{
+	z-index: 2;
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	display: none;
+}
+  #mobile-nav-close-btn{
+  font-size: 70px;
+  font-weight: 400;
+  position: absolute;
+  top: -9px;
+  right: 13px;
+  cursor: pointer;
+  transition: .3s;
+  -webkit-transition: .3s;
+  display: none;
+ }
+.mbl-menu-icon {
+	width:3px;
+	height: 30px;
+	background-color: #000;
+	transform: rotate(30deg);
+	display: inline-block;
+	margin : 0 2px;
+}
+
+
+/*Media quiries for SmartPhones view*/
+@media (max-width: 979px) {
+/*=============$$$==================
+     -----Global Styles-----
+================$$$===============*/
+html, body {
+ width: 100vw;
+overflow-x: hidden; 
+
+
+}
+.container{
+ width: 95% !important;
+}
+
+.section-header{
+ width: 100%;
+}
+
+/*Background Image Mobile styles*/
+.main-bg{
+    position: relative;
+    height: 55vh;
+    width: 100vw;
+     background: url('../images/mvsp.png') no-repeat center center ;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-position-y: top;
+    z-index: -1;
+    overflow: hidden;
+}
+
+ header{
+ 	width: 100%;
+ 	flex-direction:column;
+ 	justify-content: center;
+ 	align-items: center; 
+ 	position: relative;
+
+ }
+ .logo{
+  padding: 10px; 
+}
+/*=============$$$==================
+     -----Menubar Styles-----
+================$$$===============*/
+.mbl-menu-open{
+display: block;
+}
+
+ #menu-section{
+  display: none;
+  width: 100%;
+}
+
+ .menu{
+ 	padding-top: 20px;
+ 	display: block;
+ 	width: 100%;
+ 	text-align: center;
+  margin-bottom: -12px;
+
+ }
+ .menu li{
+ 	padding: 10px;
+ 	border-bottom: 1px solid #ccc;
+ }
+ .menu li:first-child{
+  	border-bottom: 1px solid #ccc;	
+  	border-top: 1px solid #ccc;	
+ }
+
+ .menu li:nth-last-child(-n+2){
+  border-bottom: none;
+ 	display: inline-block;
+ 	width: 49.9%;
+ }
+
+ /*mail and telephone buton styles*/
+ .nav-mail{
+ 	background-size: 20%;
+ 	border-right: 1px solid #ccc;
+ }
+ .nav-telephone p{
+ 	display:none;
+ }
+ .nav-telephone {
+    background: url('../images/tel.png') no-repeat  center;
+    background-size: 20%;
+    background-color: #ed4350;
+    margin-left: -3px;
+    
+}
+.tel-image, .mail-image{
+	padding: 10% 30%;
+
+}
+/*=============$$$==================
+     -----Field Section Styles-----
+================$$$===============*/
+.field-item{
+  flex-direction: column;
+  flex: 1 0 100%;
+  margin: 15px 0;
+}
+.field-item:last-child{
+   margin: 20px 0 50px 0; 
+}
+.field-item h5{
+  padding: 5% 0;
+}
+.field-item p{
+  padding: 0 5% 5%  ;
+
+}
+.field-item button{
+text-align: right;
+padding-right: 20px;
+font-size: 16px;
+
+}
+
+.mbl-btn{
+  display: block;
+  font-size: 30px;
+}
+/*=============$$$==================
+     -----Blog Section Styles-----
+================$$$===============*/
+.blog-item{
+  flex-direction: column;
+  flex: 1 0 100%;
+  border-right: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+
+}
+
+.blog-item:first-child{
+ border-left: 0; 
+}
+.blog-item:last-child{
+  margin-bottom: 0;
+ border-bottom: none;
+}
+.blog-item .blog-hdr{
+  padding: 15px 0;
+
+}
+.blog-item img{
+  width: 100%;
+}
+ .blog-item h4{
+  padding: 20px 0; 
+ } 
+
+ .blog-item p{
+  padding: 0 0 20px 0; 
+ } 
+.blog-item .btn{
+  width: 100%;
+  margin-bottom: 50px;
+}
+/*=============$$$==================
+     -----Footer Section Styles-----
+================$$$===============*/
+footer img{
+margin-top: 35px;
+}
+footer .address{
+  font-size: 15px;
+}
+footer .copyright{
+    font-size: 15px;
+  text-align: center;
+    padding: 10px 0 10px 0;
+}
+footer .policy{
+  font-size: 14px;
+ top: 10px;
+ left: 10px;
+}
+
+}
+
